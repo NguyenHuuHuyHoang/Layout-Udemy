@@ -1,0 +1,25 @@
+
+
+.button-1 {
+    padding: p(p-2) p(p-3);
+    background-color: c(orange-red);
+    color: c(white);
+    font-weight: fw(fw-7);
+    font-size: fz(fz-2);
+    border: 1px solid c(white);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    &:hover {
+        background-color: c(dark-red);
+    }
+}
+
+.button-find {
+    @extend .button-1;
+    background-color: c(white);
+    color: c(orange-red);
+    &:hover {
+        background-color: c(orange-red);
+        color: c(white);
+    }
+}
