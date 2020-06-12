@@ -1,11 +1,10 @@
 
 
 .button-1 {
+    @extend %bold-text;
     padding: p(p-2) p(p-3);
     background-color: c(orange-red);
     color: c(white);
-    font-weight: fw(fw-7);
-    font-size: fz(fz-2);
     border: 1px solid c(white);
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;

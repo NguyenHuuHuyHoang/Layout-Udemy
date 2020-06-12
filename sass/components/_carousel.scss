@@ -1,0 +1,62 @@
+.course-item {
+    width: 200px;
+    &__bottom{
+       padding: p(p-4) p(p-1) 0 p(p-4);
+       
+    }
+    &__title{
+        width: 150px;
+        margin-bottom: m(m-2);
+        p {
+        @extend %bold-text;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 4.2rem;
+        }
+        span {
+            color: c(grey);
+            
+        }
+        
+    }
+    &__rated{
+        display: flex;
+        align-items: center;
+        margin-bottom: m(m-1);
+        h4 {
+            margin: 0 0.5rem;
+            font-size: 1.3rem;
+            font-weight: fw(fw-7);
+            color: c(light-black);
+        }
+        span {
+            font-size: fz(fz-1);
+            color: c(light-grey);
+        }
+    }
+   &__star{
+       color: c(yellow-orange);
+       font-size: fz(fz-1);
+   }
+
+   &__prices{
+        display: flex;
+justify-content: right;
+        align-items: center;
+
+       span:first-child {
+        font-size: 1.3rem;
+        text-decoration: line-through;
+        margin-right: m(m-1);
+       }
+
+       span:last-child{
+           @extend %bold-text;
+            font-size: 1.8rem;
+            margin-right: m(m-1);
+       }
+   }
+}
