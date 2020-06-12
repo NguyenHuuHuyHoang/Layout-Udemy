@@ -18,6 +18,12 @@ body {
   font-weight: 700;
 }
 
+.course-item__title p, .course-item__title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .button-1, .button-find {
   padding: 1.1rem 1.2rem;
   background-color: #ec5252;
@@ -41,10 +47,6 @@ body {
   color: #fff;
 }
 
-.course-item {
-  width: 200px;
-}
-
 .course-item__bottom {
   padding: 1.5rem 1rem 0 1.5rem;
 }
@@ -55,14 +57,11 @@ body {
 
 .course-item__title p {
   word-break: normal;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   height: 4.2rem;
 }
 
 .course-item__title span {
-  color: "";
+  color: #686f7a;
 }
 
 .course-item__rated {
@@ -113,5 +112,36 @@ body {
 .course-item__prices span:last-child {
   font-size: 1.8rem;
   margin-right: 10px;
+}
+
+.panel {
+  width: 30%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EEE;
+  margin: 50px;
+  -webkit-box-shadow: 1px 1px 1px 1px #888;
+          box-shadow: 1px 1px 1px 1px #888;
+}
+
+.panel i {
+  font-size: 3.2rem;
+  padding-right: 1.6rem;
+}
+
+.panel span {
+  font-size: 1.5rem;
+  color: #14171C;
+}
+
+.panel:hover {
+  border-color: #FFF;
+  -webkit-box-shadow: 1px 1px 10px #888;
+          box-shadow: 1px 1px 10px #888;
 }
 /*# sourceMappingURL=main.css.map */

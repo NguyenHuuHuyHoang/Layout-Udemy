@@ -1,5 +1,4 @@
 .course-item {
-    width: 200px;
 
     &__bottom{
        padding: p(p-4) p(p-1) 0 p(p-4);
@@ -10,15 +9,14 @@
 
         p {
         @extend %bold-text;
+        @extend %text-ellipsis;
         word-break: normal;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         height: 4.2rem;
         }
 
         span {
-            color: c(grey);
+            @extend %text-ellipsis;
+            color: c(light-grey);
         }
         
     }

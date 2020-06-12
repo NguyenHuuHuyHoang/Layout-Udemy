@@ -1,0 +1,25 @@
+.panel {
+    width: 30%;
+    padding: p(p-4);
+    display: flex;
+    align-items: center;
+    border: 1px solid #EEE;
+    margin: 50px;
+    box-shadow: 1px 1px 1px 1px #888;
+
+    i {
+        font-size: fz(fz-6);
+        padding-right: p(p-5);
+    }
+
+    span {
+        font-size: fz(fz-2);
+        color: #14171C;
+    }
+
+    &:hover {
+        border-color: #FFF;
+        box-shadow: 1px 1px 10px #888 ;
+    }
+    
+}

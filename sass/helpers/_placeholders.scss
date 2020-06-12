@@ -2,3 +2,9 @@
     font-size: fz(fz-2);
     font-weight: fw(fw-7);
 }
+
+%text-ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
