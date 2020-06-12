@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto', 'Helventica', 'Arial', 'sans-serif';
 }
 
-.button-1, .button-find, .course-item__title p, .course-item__prices span:last-child {
+.button-1, .button-find, .course-item__title p, .course-item__prices span:last-child, .value-pros h4 {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -47,12 +47,62 @@ body {
   color: #fff;
 }
 
+.btn-lang {
+  padding: 9px 26px 9px 10px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 3px #AAA;
+          box-shadow: 1px 1px 3px #AAA;
+}
+
+.btn-lang i:first-child {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.btn-lang i:last-of-type {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+
+.btn-lang span {
+  font-size: 1.3rem;
+  margin-right: 1.8rem;
+}
+
+.btn-lang:hover .lang-select {
+  display: block;
+}
+
+.btn-lang .lang-select {
+  bottom: 40px;
+  left: 15px;
+  margin: 0 0 0 -15px;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 1px 1px 4px #BBB;
+          box-shadow: 1px 1px 4px #BBB;
+  background-color: #FFF;
+  text-align: left;
+  display: none;
+}
+
+.btn-lang .lang-select a {
+  display: block;
+  font-size: 1.3rem;
+  color: #686f7a;
+  padding: 10px 30px 10px 10px;
+}
+
+.btn-lang .lang-select a:hover {
+  background-color: #EEE;
+}
+
 .course-item__bottom {
   padding: 1.5rem 1rem 0 1.5rem;
 }
 
 .course-item__title {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 
 .course-item__title p {
@@ -71,7 +121,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .course-item__rated h4 {
@@ -106,12 +156,49 @@ body {
 .course-item__prices span:first-child {
   font-size: 1.3rem;
   text-decoration: line-through;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .course-item__prices span:last-child {
   font-size: 1.8rem;
-  margin-right: 10px;
+  margin-right: 1rem;
+}
+
+.value-pros {
+  padding: 1.6rem;
+}
+
+.value-pros h4 {
+  font-size: 1.9rem;
+}
+
+.value-pros p {
+  font-size: 1.6rem;
+}
+
+.review-card {
+  width: 448px;
+  padding: 3.2rem;
+}
+
+.review-card__top {
+  margin-bottom: 1.8rem;
+}
+
+.review-card__top img {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 68px;
+  margin-right: 1.6rem;
+}
+
+.review-card__top span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.review-card__bottom {
+  font-size: 1.5rem;
 }
 
 .panel {
@@ -124,7 +211,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #EEE;
-  margin: 50px;
   -webkit-box-shadow: 1px 1px 1px 1px #888;
           box-shadow: 1px 1px 1px 1px #888;
 }

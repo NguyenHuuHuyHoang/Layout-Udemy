@@ -63,3 +63,40 @@ justify-content: right;
 
    }
 }
+
+.value-pros {
+    padding: 1.6rem;
+
+    h4 {
+        @extend %bold-text;
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.review-card {
+    width: 448px;
+    padding: p(p-6);
+
+    &__top {
+        margin-bottom: m(m-3);
+
+        img {
+            border: 1px solid transparent;
+            border-radius: 50%;
+            width: 68px;
+            margin-right: 1.6rem;
+        }
+        
+        span {
+            font-size: fz(fz-2);
+            font-weight: fw(fw-7);
+        }
+    }
+    &__bottom {
+        font-size: fz(fz-2);
+    }
+}
