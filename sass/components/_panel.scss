@@ -9,6 +9,7 @@
     i {
         font-size: fz(fz-6);
         padding-right: p(p-5);
+        color: #14171C;
     }
 
     span {
@@ -19,6 +20,27 @@
     &:hover {
         border-color: #FFF;
         box-shadow: 1px 1px 10px #888 ;
+    }
+
+}
+
+.partner {
+    width: 240px;
+    padding: 36px 0 22px;
+    text-align: center;
+    
+    a {
+        font-size: fz(fz-3);
+        font-weight: fw(fw-7);
+        color: c(light-black);
+    }
+
+    p {
+        font-size: fz(fz-2);
+    }
+
+    button {
+        border-radius: 4px;
     }
 
 }

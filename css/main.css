@@ -13,7 +13,7 @@ body {
   font-family: 'Roboto', 'Helventica', 'Arial', 'sans-serif';
 }
 
-.button-1, .button-find, .course-item__title p, .course-item__prices span:last-child, .value-pros h4 {
+.button-1, .button-find, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -97,6 +97,105 @@ body {
   background-color: #EEE;
 }
 
+.value-pros {
+  padding: 1.6rem;
+}
+
+.value-pros h4 {
+  font-size: 1.9rem;
+}
+
+.value-pros p {
+  font-size: 1.6rem;
+}
+
+.review-card {
+  width: 448px;
+  padding: 3.2rem;
+}
+
+.review-card__top {
+  margin-bottom: 1.8rem;
+}
+
+.review-card__top img {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  width: 68px;
+  margin-right: 1.6rem;
+}
+
+.review-card__top span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.review-card__bottom {
+  font-size: 1.5rem;
+}
+
+.panel {
+  width: 30%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #EEE;
+  -webkit-box-shadow: 1px 1px 1px 1px #888;
+          box-shadow: 1px 1px 1px 1px #888;
+}
+
+.panel i {
+  font-size: 3.2rem;
+  padding-right: 1.6rem;
+  color: #14171C;
+}
+
+.panel span {
+  font-size: 1.5rem;
+  color: #14171C;
+}
+
+.panel:hover {
+  border-color: #FFF;
+  -webkit-box-shadow: 1px 1px 10px #888;
+          box-shadow: 1px 1px 10px #888;
+}
+
+.partner {
+  width: 240px;
+  padding: 36px 0 22px;
+  text-align: center;
+}
+
+.partner a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #505763;
+}
+
+.partner p {
+  font-size: 1.5rem;
+}
+
+.partner button {
+  border-radius: 4px;
+}
+
+.course-item {
+  width: 240px;
+  border: 1px solid #DDD;
+  -webkit-box-shadow: 0 3px 3px #AAA;
+          box-shadow: 0 3px 3px #AAA;
+}
+
+.course-item img {
+  width: 100%;
+}
+
 .course-item__bottom {
   padding: 1.5rem 1rem 0 1.5rem;
 }
@@ -162,72 +261,5 @@ body {
 .course-item__prices span:last-child {
   font-size: 1.8rem;
   margin-right: 1rem;
-}
-
-.value-pros {
-  padding: 1.6rem;
-}
-
-.value-pros h4 {
-  font-size: 1.9rem;
-}
-
-.value-pros p {
-  font-size: 1.6rem;
-}
-
-.review-card {
-  width: 448px;
-  padding: 3.2rem;
-}
-
-.review-card__top {
-  margin-bottom: 1.8rem;
-}
-
-.review-card__top img {
-  border: 1px solid transparent;
-  border-radius: 50%;
-  width: 68px;
-  margin-right: 1.6rem;
-}
-
-.review-card__top span {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.review-card__bottom {
-  font-size: 1.5rem;
-}
-
-.panel {
-  width: 30%;
-  padding: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #EEE;
-  -webkit-box-shadow: 1px 1px 1px 1px #888;
-          box-shadow: 1px 1px 1px 1px #888;
-}
-
-.panel i {
-  font-size: 3.2rem;
-  padding-right: 1.6rem;
-}
-
-.panel span {
-  font-size: 1.5rem;
-  color: #14171C;
-}
-
-.panel:hover {
-  border-color: #FFF;
-  -webkit-box-shadow: 1px 1px 10px #888;
-          box-shadow: 1px 1px 10px #888;
 }
 /*# sourceMappingURL=main.css.map */
