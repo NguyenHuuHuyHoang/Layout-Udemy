@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Udemy</title>
+  <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,14 +15,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- GOOGLE FONT ROBOTO -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./sass/vendors/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./sass/vendors/owl.carousel.min.css">
   <!-- LINK MAIN CSS -->
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+
   <header class="header">
     <div class="header__linear-gradient"></div>
-    <div class="header__content">
+    <div class="header__content container">
       <div class="row align-items-center">
         <div class="d-flex col-9 col-sm-10 col-lg-6">
           <a class="navbar-brand header__logo" href="#"><img src="./img/logo-coral.svg" alt="" srcset=""></a>
@@ -65,11 +69,41 @@
       </div>
     </div>
   </header>
-  <seciton class="carousel fluid-container">
-  
+
+  <seciton class="carousel">
+    <div class="container">
+        <div class="carousel__content d-flex flex-column">
+          <h1>Learn on your schedule</h1>
+          <p>Study any topic, anytime. Explore thousands of courses starting at $12.99 each.</p>
+          <div class="carousel__input-search input-group">
+            <input type="text" class="form-control" placeholder="What do you want to learn ?">
+            <div class="input-group-append">
+              <button class="btn" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
 
 
   </seciton>
+
+  <section class="new-chanel">
+    <div class="new-chanel__content container">
+      <div class="row">
+        <div class="col-4">
+          <div class="new-chanel__left">
+            h3{The world’s largest selection of courses}
+            span{Choose from over 100,000 online video courses with new additions published every month}
+          </div>
+        </div>
+        <div class="col-8"></div>
+      </div>
+    </div>
+  </section>
+
+  <div></div>
   <button class="button-1">Add to cart</button>
   <div class="course-item">
     <img src="./img/567828_67d0.jpg" alt="">
@@ -159,6 +193,7 @@
   <script src="./sass/vendors/jquery-3.3.1.slim.min.js"></script>
   <script src="./sass/vendors/popper.min.js"></script>
   <script src="./sass/vendors/bootstrap.min.js"></script>
+  <script src='./sass/vendors/owl.carousel.min.js'></script>
 </body>
 
 </html>

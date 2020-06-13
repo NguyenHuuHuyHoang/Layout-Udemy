@@ -1,0 +1,14 @@
+@import '../helpers/variables';
+@import '../helpers/functions';
+@import '../helpers/placeholders';
+@import '../helpers/mixins';
+
+.new-chanel {
+    display: block;
+    
+    &__left {
+        padding: 0 32px;
+        display: flex;
+
+    }
+}

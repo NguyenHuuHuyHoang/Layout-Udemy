@@ -4,7 +4,62 @@
 @import '../helpers/mixins';
 
 .carousel {
-    background-color: #000;
-    background: url('../../img/banner.jpg') center center no-repeat #000;
-    height: 500px;
+   display: block;
+   height: 500px;
+   background: url(../../img/banner.jpg) center center/cover no-repeat;
+   @include relative;
+   margin-bottom: m(m-3);
+
+   &__content {
+    width: 25%;
+    @include absolute(top 30% left 15%);
+    @include Responsive(LG){
+        width: 40%;
+    }
+    @include Responsive(MD) {
+        @include absolute(top 30% left 10%);
+        width: 50%;
+    }
+    @include Responsive(XS) {
+        @include absolute(top 30% left 0);
+        width: 100%;
+    }
+
+    h1{
+        @include Text(4rem, fw(fw-7), c(lighter-grey));
+        margin-bottom: m(m-1);
+    }
+
+    p{
+        @include Text(fz(fz-3),fw(fw-4), c(lighter-grey));
+        margin-bottom: m(m-3);
+    }
+    }
+
+    &__input-search {
+        input {
+            padding: 20px 0;
+            text-indent: 10px;
+            font-size: fz(fz-2);
+        }
+        input:placeholder-shown{
+            text-indent: 10px;
+        }
+        input:focus {
+            border-color: red;
+        }
+        button{
+            padding: 0 20px;
+            background: white;
+            color: c(orange-red);
+            font-size: fz(fz-3);
+            border-color: c(lighter-grey);
+            border-left: transparent;
+        }
+
+        button:hover {
+            background: c(orange-red);
+            color:white;
+        }
+    }
 }

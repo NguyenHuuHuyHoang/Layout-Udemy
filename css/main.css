@@ -377,8 +377,105 @@ body {
 }
 
 .carousel {
-  background-color: #000;
-  background: url("../../img/banner.jpg") center center no-repeat #000;
+  display: block;
   height: 500px;
+  background: url(../../img/banner.jpg) center center/cover no-repeat;
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.carousel__content {
+  width: 25%;
+  top: 30%;
+  left: 15%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel__content {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel__content {
+    top: 30%;
+    left: 10%;
+    position: absolute;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .carousel__content {
+    top: 30%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.carousel__content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #dedfe0;
+  margin-bottom: 1rem;
+}
+
+.carousel__content p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #dedfe0;
+  margin-bottom: 1.8rem;
+}
+
+.carousel__input-search input {
+  padding: 20px 0;
+  text-indent: 10px;
+  font-size: 1.5rem;
+}
+
+.carousel__input-search input:placeholder-shown {
+  text-indent: 10px;
+}
+
+.carousel__input-search input:focus {
+  border-color: red;
+}
+
+.carousel__input-search button {
+  padding: 0 20px;
+  background: white;
+  color: #ec5252;
+  font-size: 1.8rem;
+  border-color: #dedfe0;
+  border-left: transparent;
+}
+
+.carousel__input-search button:hover {
+  background: #ec5252;
+  color: white;
+}
+
+.button-1, .button-find, .header__input-search button, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.course-item__title p, .course-item__title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.new-chanel {
+  display: block;
+}
+
+.new-chanel__left {
+  padding: 0 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
