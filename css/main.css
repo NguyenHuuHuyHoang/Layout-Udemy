@@ -364,4 +364,21 @@ body {
 .header__cart a:hover {
   background-color: rgba(20, 23, 28, 0.05);
 }
+
+.button-1, .button-find, .header__input-search button, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.course-item__title p, .course-item__title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel {
+  background-color: #000;
+  background: url("../../img/banner.jpg") center center no-repeat #000;
+  height: 500px;
+}
 /*# sourceMappingURL=main.css.map */

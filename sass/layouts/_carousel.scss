@@ -1,0 +1,10 @@
+@import '../helpers/variables';
+@import '../helpers/functions';
+@import '../helpers/placeholders';
+@import '../helpers/mixins';
+
+.carousel {
+    background-color: #000;
+    background: url('../../img/banner.jpg') center center no-repeat #000;
+    height: 500px;
+}
