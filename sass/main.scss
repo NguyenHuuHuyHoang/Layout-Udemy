@@ -4,9 +4,12 @@
 @import 'helpers/variables';
 @import 'helpers/functions';
 @import 'helpers/placeholders';
+@import 'helpers/mixins';
 
 @import './components/buttons';
 @import './components/carousel';
 @import './components/panel';
 @import './components/cards';
 @import './components/dropdowns';
+
+@import './layouts/header';

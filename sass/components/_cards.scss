@@ -16,15 +16,12 @@
         p {
         @extend %bold-text;
         @extend %text-ellipsis;
-        word-break: normal;
-        height: 4.2rem;
         }
 
         span {
             @extend %text-ellipsis;
             color: c(light-grey);
         }
-        
     }
 
     &__rated{

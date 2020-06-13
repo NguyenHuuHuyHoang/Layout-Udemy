@@ -11,9 +11,10 @@ html {
 
 body {
   font-family: 'Roboto', 'Helventica', 'Arial', 'sans-serif';
+  font-size: 1.5rem;
 }
 
-.button-1, .button-find, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
+.button-1, .button-find, .header__input-search button, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -24,16 +25,15 @@ body {
   text-overflow: ellipsis;
 }
 
-.button-1, .button-find {
+.button-1, .button-find, .header__input-search button {
   padding: 1.1rem 1.2rem;
   background-color: #ec5252;
   color: #fff;
   border: 1px solid #fff;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-radius: 3px;
 }
 
-.button-1:hover, .button-find:hover {
+.button-1:hover, .button-find:hover, .header__input-search button:hover {
   background-color: #992337;
 }
 
@@ -144,8 +144,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #EEE;
-  -webkit-box-shadow: 1px 1px 1px 1px #888;
-          box-shadow: 1px 1px 1px 1px #888;
+  -webkit-box-shadow: 1px 1px 1px #999;
+          box-shadow: 1px 1px 1px #999;
 }
 
 .panel i {
@@ -204,11 +204,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.course-item__title p {
-  word-break: normal;
-  height: 4.2rem;
-}
-
 .course-item__title span {
   color: #686f7a;
 }
@@ -261,5 +256,112 @@ body {
 .course-item__prices span:last-child {
   font-size: 1.8rem;
   margin-right: 1rem;
+}
+
+.button-1, .button-find, .header__input-search button, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.course-item__title p, .course-item__title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header__content {
+  padding: 10px 0;
+}
+
+.header__linear-gradient {
+  width: 100%;
+  height: 0.8rem;
+  background: -webkit-gradient(linear, left top, right top, from(#645b53), color-stop(18.23%, #eb5252), color-stop(34.37%, #f78f2f), color-stop(48.96%, #f4c151), color-stop(66.15%, #52bb76), color-stop(82.29%, #26a5d7), to(#e069b7));
+  background: linear-gradient(90deg, #645b53 0%, #eb5252 18.23%, #f78f2f 34.37%, #f4c151 48.96%, #52bb76 66.15%, #26a5d7 82.29%, #e069b7 100%);
+}
+
+.header__logo img {
+  width: 120px;
+}
+
+.header__categories {
+  border: 1px solid transparent;
+  display: inline-block;
+  color: #505763;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.header__categories i {
+  color: #686f7a;
+  margin-right: 5px;
+}
+
+.header__categories:hover {
+  color: #505763;
+  border: 1px solid #EEE;
+  background-color: rgba(20, 23, 28, 0.05);
+  border-radius: 3px;
+}
+
+.header__input-search input {
+  text-indent: 10px;
+  font-size: 15px;
+  padding: 25px 0;
+  border-color: rgba(222, 223, 224, 0.757);
+  border-right-color: transparent;
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.header__input-search input:placeholder-shown {
+  text-indent: 10px;
+}
+
+.header__input-search button {
+  color: #505763;
+  background-color: #ec5252;
+  border-color: rgba(222, 223, 224, 0.757);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left-color: transparent;
+  color: #ec5252;
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.header__input-search button:hover {
+  background-color: #ec5252;
+  color: white;
+  border-color: rgba(222, 223, 224, 0.757);
+}
+
+.header__info {
+  border-right: 1px solid #dedfe0;
+}
+
+.header__info a {
+  font-size: 1.2rem;
+}
+
+.header__buttons button:first-child {
+  border: 1px solid black;
+  background-color: white;
+  color: #505763;
+}
+
+.header__buttons button:first-child:hover {
+  color: black;
+}
+
+.header__cart a {
+  padding: 10px 15px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid transparent;
+  font-size: 20px;
+  color: #505763;
+}
+
+.header__cart a:hover {
+  background-color: rgba(20, 23, 28, 0.05);
 }
 /*# sourceMappingURL=main.css.map */

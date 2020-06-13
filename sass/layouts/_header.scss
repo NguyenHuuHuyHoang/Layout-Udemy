@@ -1,0 +1,109 @@
+@import '../helpers/variables';
+@import '../helpers/functions';
+@import '../helpers/placeholders';
+@import '../helpers/mixins';
+
+.header {
+    &__content {
+        padding: 10px 0;
+    }
+
+    &__linear-gradient {
+        width: 100%;
+        height: 0.8rem;
+        background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);
+    }
+
+    &__logo img {
+        width: 120px;
+    }
+
+    &__categories {
+        border: 1px solid transparent;
+        display: inline-block;
+        color: c(light-black);
+        padding: 10px;
+        margin-right: 10px;
+        i {
+            color: c(light-grey);
+            margin-right: 5px;
+        }
+    }
+
+    &__categories:hover {
+        color: c(light-black);
+        border: 1px solid #EEE;
+        background-color: c(grey-0);
+        border-radius: 3px;
+    }
+
+    &__input-search {
+        input {
+            text-indent: 10px;
+            font-size: 15px;
+            padding: 25px 0;
+            border-color: rgba(222, 223, 224, 0.757);
+            border-right-color: transparent;
+            background-color: c(grey-0);
+        }
+
+        input:placeholder-shown {
+            text-indent: 10px;
+        }
+
+        button {
+            @extend .button-1;
+            @include IconColor(c(light-black), c(orange-red));
+            border-color: rgba(222, 223, 224, 0.757);
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-left-color: transparent;
+            color: c(orange-red);
+            background-color: c(grey-0);
+        }
+
+        button:hover {
+            background-color: c(orange-red);
+            color: white;
+            border-color: rgba(222, 223, 224, 0.757);
+        }
+    }
+
+    &__info {
+        border-right: 1px solid c(lighter-grey);
+        a {
+            font-size: fz(fz-1);
+        }
+    }
+
+    &__buttons {
+
+        button:first-child {
+            border: 1px solid black;
+            background-color: white;
+            color: c(light-black);
+        }
+
+        button:first-child:hover {
+            color: black;
+        }
+    }
+
+    &__cart {
+        a {
+            padding: 10px 15px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid transparent;
+            font-size: 20px;
+            color: c(light-black);
+        }
+        a:hover {
+            background-color: c(grey-0);
+        }
+    }
+    
+
+
+
+}

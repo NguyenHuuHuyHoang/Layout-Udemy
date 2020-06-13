@@ -1,57 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Udemy</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./sass/vendors/bootstrap.min.css">
-    <!-- FONT AWESOME LIBRARY -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- GOOGLE FONT ROBOTO -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <!-- LINK MAIN CSS -->
-    <link rel="stylesheet" href="./css/main.css">
-  </head>
-  <body>
-    <button class="button-1">Add to cart</button>
-    
-    
+<head>
+  <title>Udemy</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div class="course-item">
-      <img src="./img/567828_67d0.jpg" alt="">
-      <div class="course-item__bottom">
-        <div class="course-item__title">
-          <div >
-            <p>Complete Python <br> Bootcamp: Go from zero to hero in Python 3</p> 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./sass/vendors/bootstrap.min.css">
+  <!-- FONT AWESOME LIBRARY -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- GOOGLE FONT ROBOTO -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- LINK MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header container-fluid">
+    <div class="header__linear-gradient"></div>
+    <div class="header__content container">
+      <div class="row align-items-center">
+        <div class="d-flex col-md-6">
+          <a class="navbar-brand header__logo" href="#"><img src="./img/logo-coral.svg" alt="" srcset=""></a>
+          <a href="#" class="header__categories text-decoration-none d-flex align-items-center">
+            <i class="fa fa-th"></i>
+            <span>Categories</span>
+          </a>
+          <div class="header__input-search input-group">
+            <input type="text" class="form-control" placeholder="Seach for anything">
+            <div class="input-group-append">
+              <button class="btn" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
           </div>
-          <span>Jose Portilla</span>
-        </div> 
-        <div class="course-item__rated">
-          <div class="course-item__star">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <h4 class="d-inline">4.4</h4>
-          <span>(67,712)</span>
         </div>
-        <div class="course-item__prices">
-          <span>$194.99</span>
-          <span>$12.99</span>
+        <div class="d-flex col-md-6">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="header__info d-flex">
+                <a href="#" class="header__categories text-decoration-none ">Udemy for business
+                </a>
+                <a href="#" class="header__categories text-decoration-none ">
+                  Teach on Udemy
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-between">
+              <div class="header__cart"><a class="text-decoration-none " href="#">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a></div>
+              <div class="header__buttons">
+                <button class="button-1">Log in</button>
+                <button class="button-1">Sign Up</button>
+              </div>
+              </div>
+            
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="m-5"></div>
+  </header>
+  <seciton class="carousel fluid-container">
+    <div class="carousel__content container">
+      
+    </div>
+  </seciton>
+  <button class="button-1">Add to cart</button>
+  <div class="course-item">
+    <img src="./img/567828_67d0.jpg" alt="">
+    <div class="course-item__bottom">
+      <div class="course-item__title">
+        <div>
+          <p>Complete Python Bootcamp: Go from zero to hero in Python 3</p>
+        </div>
+        <span>Jose Portilla</span>
+      </div>
+      <div class="course-item__rated">
+        <div class="course-item__star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <h4 class="d-inline">4.4</h4>
+        <span>(67,712)</span>
+      </div>
+      <div class="course-item__prices">
+        <span>$194.99</span>
+        <span>$12.99</span>
+      </div>
+    </div>
+  </div>
 
-    <a class="text-decoration-none"href="">
-      <div class="panel">
+  <div class="m-5"></div>
+  <a class="text-decoration-none" href="">
+    <div class="panel">
       <i class="fa fa-code"></i>
       <span>Development</span>
     </div>
@@ -62,14 +111,15 @@
     <h4>Learn from industry experts</h4>
     <p>Select from top instructors around the world</p>
   </div>
-    
+
   <div class="review-card">
     <div class="review-card__top">
       <img src="./img/8872940_27b4_3.jpg" alt="">
       <span>Borivoje</span>
     </div>
     <div class="review-card__bottom">
-      Udemy is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to Udemy, I'm really close.
+      Udemy is a life saver. I don't have the time or money for a college education. My goal is to become a freelance
+      web developer, and thanks to Udemy, I'm really close.
     </div>
   </div>
 
@@ -99,14 +149,16 @@
   </button>
   <div class="partner d:flex flex-column">
     <a href="" class="d:block text-decoration-none">Become and instructor</a>
-    <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+    <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to
+      teach what you love.</p>
     <button class="button-1">Start teaching today</button>
   </div>
   <div class="mb-5"></div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./sass/vendors/jquery-3.3.1.slim.min.js"></script>
-    <script src="./sass/vendors/popper.min.js"></script>
-    <script src="./sass/vendors/bootstrap.min.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./sass/vendors/jquery-3.3.1.slim.min.js"></script>
+  <script src="./sass/vendors/popper.min.js"></script>
+  <script src="./sass/vendors/bootstrap.min.js"></script>
+</body>
+
 </html>

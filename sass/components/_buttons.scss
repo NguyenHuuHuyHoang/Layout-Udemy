@@ -6,8 +6,7 @@
     background-color: c(orange-red);
     color: c(white);
     border: 1px solid c(white);
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 3px;
     &:hover {
         background-color: c(dark-red);
     }
