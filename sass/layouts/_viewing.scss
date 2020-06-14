@@ -1,0 +1,13 @@
+@import '../helpers/variables';
+@import '../helpers/functions';
+@import '../helpers/placeholders';
+@import '../helpers/mixins';
+
+.viewing {
+    &__content {
+        padding: 20px 0;
+        span {
+            font-size: 20px;
+        }
+    }
+}

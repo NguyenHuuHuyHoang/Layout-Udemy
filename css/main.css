@@ -614,4 +614,23 @@ body {
   padding: 20px 0;
   background: #dedfe0;
 }
+
+.button-1, .button-find, .header__input-search button, .value-pros h4, .course-item__title p, .course-item__prices span:last-child {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.course-item__title p, .course-item__title span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.viewing__content {
+  padding: 20px 0;
+}
+
+.viewing__content span {
+  font-size: 20px;
+}
 /*# sourceMappingURL=main.css.map */
