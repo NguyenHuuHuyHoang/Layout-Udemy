@@ -44,3 +44,23 @@
     }
 
 }
+
+.value-pros {
+    height: 100%;
+    padding: 1.6rem;
+    border: 1px solid c(lighter-grey);
+    background: white;
+
+    img {
+        height: 60px;
+    }
+    
+    h4 {
+        @extend %bold-text;
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}

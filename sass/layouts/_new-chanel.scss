@@ -3,12 +3,47 @@
 @import '../helpers/placeholders';
 @import '../helpers/mixins';
 
-.new-chanel {
-    display: block;
-    
-    &__left {
-        padding: 0 32px;
-        display: flex;
+@import '../components/panel';
+@import '../base/normalize';
 
+.new-chanel {
+
+    &__left {
+        background: white;
+        padding: 0 32px;
+
+        h3{
+            font-weight: fw(fw-7);
+        }
     }
+
+   &__tabs#nav-tab.nav.nav-tabs.custom-nav{
+        border:none ;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        .nav-item {
+            color: c(light-black);
+            border: none;
+            border-bottom: 1px solid c(lighter-grey);
+            color: c(light-dark);
+
+            &:hover{
+                border:none;
+                border-bottom: 1px solid c(lighter-grey);
+            }
+            
+        }
+        .nav-item.nav-link.active {
+            padding-bottom: 20px;
+            border: none;
+            border-bottom: 5px solid c(dark-blue);
+        }
+    }
+
+    &__values{
+    padding: 20px 0;
+       background: c(lighter-grey);
+    }
+    
 }
